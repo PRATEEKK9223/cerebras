@@ -70,7 +70,7 @@ app.post("/search", async (req, res) => {
 
     const result = response.choices[0].message.content;
 
-    console.log(result);
+    // console.log(result);
     res.render("result", { result }); // <-- 
   } catch (error) {
     console.error("Error:", error);
@@ -81,5 +81,5 @@ app.post("/search", async (req, res) => {
 });
 
 app.listen(4040, () => {
-  console.log("Server is running on port 4000");
+  console.log("Server is running on port 4040");
 });
